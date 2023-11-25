@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 1;        /* 1 means swallow floating windows by default */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -12,7 +12,8 @@ static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
-static const char *fonts[]          = { "MesloLGS Nerd Font Mono:size=16" };
+static const char *fonts[]          = { "Cantarell Regular:size=14" };
+//static const char *fonts[]          = { "MesloLGS Nerd Font Mono:size=12" };
 static const char dmenufont[]       = "MesloLGS Nerd Font Mono:size=16";
 static const char col_gray1[]       = "#2E3440";
 static const char col_gray2[]       = "#3B4252";
@@ -36,7 +37,7 @@ static const char *const autostart[] = {
   "picom", NULL,
   //  "feh", "--bg-fill", "$HOME/Pictures/background.jpg", NULL,
   "udiskie", NULL,
-  "/usr/local/bin/dwmblocks", NULL,
+  "/usr/local/bin/dwmblocks &", NULL,
   "nitrogen", "--restore", NULL,
   "easyeffects", "--gapplication-service", NULL,
   NULL /* terminate */
